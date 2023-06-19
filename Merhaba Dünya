@@ -1,0 +1,8 @@
+// Java dili hakkında kısaca bilgi edindiğimize göre olmazsa olmaz ilk örneğimizle başlayalım.
+// Ekrana "Merhaba, Dünya!" yazdıran bir Java programı yazma:
+public class MerhabaDunya {
+    public static void main(String[] args) {
+        // "Merhaba, Dünya!" metnini ekrana yazdırmak için println() metodunu kullanıyoruz.
+        System.out.println("Merhaba, Dünya!");
+    }
+}
