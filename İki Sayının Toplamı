@@ -1,0 +1,14 @@
+// İki sayının toplamını bulan bir Java programı yazın.
+public class Toplama {
+    public static void main(String[] args) {
+        // İki sayıyı tanımlayın
+        int sayi1 = 14; // İlk sayıyı 14 olarak tanımladık
+        int sayi2 = 11; // İkinci sayıyı 11 olarak tanımladık
+
+        // İki sayıyı toplayın
+        int toplam = sayi1 + sayi2; // Toplama işlemini gerçekleştirip sonucu 'toplam' değişkenine atadık
+
+        // Toplamı ekrana yazdırın
+        System.out.println("Toplam: " + toplam); // Toplam değerini ekrana yazdırdık
+    }
+}
