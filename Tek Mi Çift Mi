@@ -1,0 +1,25 @@
+// Kullanıcıdan alınan sayının tek mi çift mi olduğunu bulan bir Java programı yazın.
+
+// Kullanıcıdan veri almak için Scanner sınıfını kullanıyoruz.
+import java.util.Scanner;
+
+public class TekMiCiftMi {
+    public static void main(String[] args) {
+        // Scanner nesnesini oluşturuyoruz.
+        Scanner scanner = new Scanner(System.in);
+
+        // Kullanıcıdan bir sayı istiyoruz.
+        System.out.print("Bir sayı girin: ");
+        int sayi = scanner.nextInt();
+
+        // Sayının çift veya tek olduğunu kontrol ediyoruz.
+        if (sayi % 2 == 0) {
+            System.out.println("Girilen sayı çifttir.");
+        } else {
+            System.out.println("Girilen sayı tektir.");
+        }
+
+        // Scanner nesnesini kapatıyoruz.
+        scanner.close();
+    }
+}
