@@ -1,0 +1,26 @@
+// Kullanıcıdan alınan iki sayının çarpımını bulan bir Java programı yazalım.
+// Kullanıcıdan veri almak için Scanner sınıfını kullanıyoruz.
+import java.util.Scanner;
+public class Carpma {
+    public static void main(String[] args) {
+        // Scanner nesnesini oluşturuyoruz.
+        Scanner scanner = new Scanner(System.in);
+
+        // Kullanıcıdan ilk sayıyı alıyoruz.
+        System.out.print("Birinci sayıyı girin: ");
+        int sayi1 = scanner.nextInt();
+
+        // Kullanıcıdan ikinci sayıyı alıyoruz.
+        System.out.print("İkinci sayıyı girin: ");
+        int sayi2 = scanner.nextInt();
+
+        // İki sayıyı çarpıyoruz.
+        int carpim = sayi1 * sayi2;
+
+        // Çarpım sonucunu ekrana yazdırıyoruz.
+        System.out.println("Çarpım: " + carpim);
+
+        // Scanner nesnesini kapatıyoruz.
+        scanner.close();
+    }
+}
