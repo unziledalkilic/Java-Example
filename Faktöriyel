@@ -1,0 +1,25 @@
+// Girilen bir sayının faktöriyelini bulan bir Java programı yazalım.
+// Kullanıcıdan veri almak için Scanner sınıfını kullanıyoruz.
+import java.util.Scanner;
+public class Faktoriyel {
+    public static void main(String[] args) {
+        // Scanner nesnesini oluşturuyoruz.
+        Scanner scanner = new Scanner(System.in);
+
+        // Kullanıcıdan bir sayı istiyoruz.
+        System.out.print("Bir sayı girin: ");
+        int sayi = scanner.nextInt();
+
+        // Faktöriyel hesaplama işlemi
+        int faktoriyel = 1;
+        for (int i = 1; i <= sayi; i++) {
+            faktoriyel *= i;
+        }
+
+        // Sonucu ekrana yazdırma
+        System.out.println(sayi + " sayısının faktöriyeli: " + faktoriyel);
+
+        // Scanner nesnesini kapatıyoruz.
+        scanner.close();
+    }
+}
